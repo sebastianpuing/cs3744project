@@ -1,5 +1,14 @@
 import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } from "recharts";
 
+/**
+ * The ProgressBar component utilizes Recharts to display a 
+ * progress bar as a horizontal bart chart. The data as well as the goal 
+ * are passed in through props. The data is used for the bar and the goal
+ * is used to change to domain of the x-axis. The graph changes as the user 
+ * enters new data.
+ * @param {*} props data for the bar chart and goal for the x-axis domain
+ * @returns the proogress bar component
+ */
 function ProgressBar(props) {
   return (
     <div className="w-full h-[20vh]">
