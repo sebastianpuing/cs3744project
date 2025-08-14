@@ -50,7 +50,8 @@ See video demonstration for visuals.
 * If a user refreshes, the data on the browser resets, but is still saved on MongoDB
   * For example, if I input 5 oz, refresh, and input 5 oz again, 5 oz will only show on the application, but will be listed as 10 oz in MongoDB
 * Users cannot edit or delete entries
-* Can only input amounts in ounces 
+* Can only input amounts in ounces
+* Timnezone in UTC not EST
 * Users cannot view previous days, but the data is still in MongoDB
 * Progress Bar is only for the current day
 * Only works on a browser, not mobile
