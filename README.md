@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Water Tracker (CS 3744 Final Project)
 
-## Getting Started
+**Description:** The Water Tracker application is designed for people who work office jobs to track their water intake for the day. Water intake throughout the day is essential as dehydration could lead to lower cognitive performance and/or headaches. Rather than utilizing a mobile, which is inconvenient for people trying to stay focused on work, this water tracker runs on your browser, keeping you focused on work.
 
-First, run the development server:
+---
 
+## Installation and Setup Instructions 
 ```bash
+# Clone repository
+git clone https://github.com/sebastianpuing/cs3744project.git
+
+# Navigate into project folder
+cd cs3744project
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Feature List**:
+* Display of the current date
+* Add Water Intake amount in ounces (oz)
+* Set daily goal
+* Tooltips for inputs and buttons
+* Progress Bar that showcases current intake vs goal, updates in real-time
+* Show proportion of total intake vs goal below the progress bar
+* MongoDB integration to save water intake for each day
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+See video demonstration for visuals.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+**Technology Stack**
+* React
+* Next.js
+* Tailwind CSS
+* Node.js
+* MongoDB
+* Mongoose
+* Axios
+* React-Tooltips
+* Recharts
 
-To learn more about Next.js, take a look at the following resources:
+--- 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Issues and Limitations**
+* If a user refreshes, the data on the browser resets, but is still saved on MongoDB
+  * For example, if I input 5 oz, refresh, and input 5 oz again, 5 oz will only show on the application, but will be listed as 10 oz in MongoDB
+* Users cannot edit or delete entries
+* Can only input amounts in ounces 
+* Users cannot view previous days, but the data is still in MongoDB
+* Progress Bar is only for the current day
+* Only works on a browser, not mobile
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+--- 
 
-## Deploy on Vercel
+**Future Plans**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  I plan first to incorporate the ability for users to edit as well as delete entries. I will probably have a table below the input section with edit and delete buttons next to each entry. I then plan to add the ability for users to select what unit they want to enter and display. All of the data would be converted to their desired unit, and the data will dispaly with their unit. I also plan to show a weekly chart for the water intake. Further down the line, I plan to make this a mobile app.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+**Video Demonstration**
+
+  
+
+
+
