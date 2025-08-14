@@ -28,6 +28,7 @@ npm run dev
 * Progress Bar that showcases current intake vs goal, updates in real-time
 * Show proportion of total intake vs goal below the progress bar
 * MongoDB integration to save water intake for each day
+* Responsive
 
 See video demonstration for visuals.
 
